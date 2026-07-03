@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:label="SuspensionFix"
+        android:supportsRtl="true">
+
+        <receiver
+            android:name=".SuspensionReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.suspension.fix.LOCK_SUSPENSION" />
+                <action android:name="com.suspension.fix.UNLOCK_SUSPENSION" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
