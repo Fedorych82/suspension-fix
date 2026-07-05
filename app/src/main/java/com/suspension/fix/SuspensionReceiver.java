@@ -27,6 +27,6 @@ public class SuspensionReceiver extends BroadcastReceiver {
 
         Log.i(TAG, "Получен " + command + " (" + action + ")");
         PendingResult pending = goAsync();
-        SuspensionController.apply(command, pending::finish);
+        SuspensionController.apply(command, (code, detail) -> pending.finish());
     }
 }

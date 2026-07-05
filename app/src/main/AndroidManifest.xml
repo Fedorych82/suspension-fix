@@ -10,6 +10,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
 
+        <!-- Вендорная публичная либа CAN-шины: обязательна для targetSdk >= 31,
+             чтобы линкер пустил её в namespace приложения. -->
+        <uses-native-library
+            android:name="libqg_hal.so"
+            android:required="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

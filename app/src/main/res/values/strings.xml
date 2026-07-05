@@ -2,4 +2,6 @@
     <string name="app_name">SuspensionFix</string>
     <string name="btn_lock">Заблокировать подвеску</string>
     <string name="btn_unlock">Разблокировать подвеску</string>
+    <string name="btn_check">Проверить шину</string>
+    <string name="status_unknown">Шина: —</string>
 </resources>
